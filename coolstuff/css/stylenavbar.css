@@ -1,38 +1,48 @@
+:root{
+	--navcolor: black; 	
+	--navtextcolor: white;
+	--navtextcolorhover:grey;
+	--navtextcolorBGhover:#313639;
+	--navlinktextsize: 13px;
+	--navbarheight:12vh;
+	--navlogotextsize: 15px;
+	--navlinkwidthpercentage: 30%;
+}
 nav {
-	position: sticky; 
+	position: relative;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	min-height: 12vh;
-	background: black /*linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5))*/;
+	min-height: var(--navbarheight);
+	background: var(--navcolor);
 	z-index: 9999; 
 
 }
 .logo {
-	color: white;
+	color: var(--navtextcolor);
 	text-transform: uppercase;
 	letter-spacing: 5px;
-	font-size: 15px; 
+	font-size: var(--logotextsize);
 }
 .links{
 	display: flex; 
 	justify-content: space-around;
-	width: 30%;
-	;  
+	width: var(--navlinkwidthpercentage);
+	 
 }
 
 .links li{
 	list-style: none;
 }
 .links a {
-	color: white;
+	color: var(--navtextcolor);
 	text-decoration: none;
-	letter-spacing: 3px
-	font-size 12px;
+	letter-spacing: 3px;
+	font-size: var(--navlinktextsize);
 }
 .links a:hover{
-	color: grey;
-	background: #313639;
+	color:var(--navtextcolorhover);
+	background: var(--navtextcolorBGhover);
 	padding: 15px; 
 	border-radius: 2px  
 }
@@ -42,7 +52,7 @@ nav {
 .burger div{
 	width: 25px;
 	height: 3px;
-	background-color: white;
+	background-color: var(--navtextcolor);
 	margin: 5px; 
 	transition: all .3s ease; 
 }
@@ -63,7 +73,6 @@ nav {
 		right: 0px;
 		height: 88vh;
 		top: 12vh;
-		background: black  /*linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5))*/; 
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -110,17 +119,7 @@ nav {
 		overflow-x: hidden;
 	}
 	
-	@media (max-width: 500px){
-		.container{
-			width: 95%;
-			left: auto;
-			margin-left: 2.5%;
-		}
-		
-		.space{
-			height: 10px; 
-		}
-	} 
+	
 	.logo{
 		font-size: 12px; 
 	}
@@ -128,8 +127,8 @@ nav {
 		position: absolute;
 		right: 0px;
 		height: 88vh;
-		top: 12vh;
-		background: black  /*linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5))*/; 
+		top: var(--navbarheight);
+		background: var(--navcolor) ; 
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -140,7 +139,7 @@ nav {
 	.links li{
 		opacity: .4;
 		border: 1px; 
-		border-color:  white; 
+		
 
 	}
 	.burger{

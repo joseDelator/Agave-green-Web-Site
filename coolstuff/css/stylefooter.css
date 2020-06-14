@@ -1,0 +1,64 @@
+
+.footer{
+    display: flex;
+    align-items: center;
+   min-height: 100px;
+   background: black; 
+    margin-top: 10px;
+   
+    
+}
+
+
+.footer .svg-container{
+    width: 20%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    
+}
+.footer .svg-container h3{
+    position: relative;
+    text-transform: capitalize;
+    opacity: 0;
+    transition: .5s ease-in;
+    
+    
+}
+.footer svg{
+    
+   fill: white;
+    outline-color: rgba(18, 167, 212, .5);
+    width:60px;
+    height: 60px;
+    margin: 10px;
+}
+
+
+
+.footer .svg-container:hover{
+    background: darkgoldenrod;
+    border-radius: 4px;
+}
+.footer .svg-container:hover h3{
+    opacity: 1;
+    color: goldenrod;
+}  
+
+.footer .svg-container:hover svg{
+
+    opacity: .6;
+    transform: rotate(34);
+}
+@media(max-width: 700px){
+    .footer{
+        display: grid;
+    }
+    .footer .svg-container{
+        width: 100%;
+    }
+    .footer .svg-container h3{
+        opacity: 1;
+        color: white;
+    }
+}
