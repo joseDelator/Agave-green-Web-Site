@@ -1,0 +1,22 @@
+.info-top{
+
+    background-color: rgba(183, 225, 205, .6);
+    display: flex;
+    
+    
+  }
+  .info-top h1{
+    
+    font-size: 15px;
+    padding: 10px;
+  }
+  @media(max-width: 805px){
+    .info-top{
+     display: block;
+    }
+
+    .info-top h1{
+      padding-top: 0px;
+      padding-bottom: 2px;
+    }
+}
