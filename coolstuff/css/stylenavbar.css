@@ -54,6 +54,7 @@ nav {
 	height: 3px;
 	background-color: var(--navtextcolor);
 	margin: 5px; 
+	border-radius: 5px;
 	transition: all .3s ease; 
 }
 
@@ -114,7 +115,7 @@ nav {
 	 .toggle .line3{
 	 	transform: rotate(45deg) translate(-5px, -6px);
 	 }
-@media  (max-width: 800px) {
+@media  (max-width: 1100px) {
 	body{
 		overflow-x: hidden;
 	}

@@ -1,8 +1,11 @@
+:root {
+--lightbluecolor: rgba(183, 225, 205, 1);
+}
 *{
 	margin: 0;
 	padding: 0;
   box-sizing: border-box;
-  
+  font-family: 'Sriracha', sans-serif;
 }
 div.swiper-button-prev,
 div.swiper-button-next {
@@ -42,9 +45,9 @@ color: cyan;
     .description{
       position: relative;
       width: 1050px;
-      background-color: gray;
+      background-color: var(--lightbluecolor);
       left: calc(50% - 525px);
-      
+      text-align: center;
     }
     .description h2{
       padding: 20px 
