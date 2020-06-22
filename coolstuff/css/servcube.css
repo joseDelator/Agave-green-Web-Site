@@ -1,21 +1,24 @@
+ :root{
+  --fenceimage: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url(../imges/fencecool.jpg);
+  --maintanceimage:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url(../imges/maintance.jpg);
+  --Truffimage: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url(../imges/porjected.jpg);
+  --otherprojects:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url(../imges/project2.jpg)
+ }
  *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
  body{
   margin: 0; 
   padding: 0; 
-
- 
- 
+  font-family: 'Sriracha', serif; 
 }
     .swiper-container {
       margin: 100px; 
     }
-    .card{
-
-          
+    .card{     
       width: 100%;
       height: 500px; 
       background-color: #feeeee; 
@@ -30,33 +33,78 @@
       border-top-right-radius: 15px;
       display: flex;
       justify-content: center;
-
+      background-color: darkmagenta;
+      color: white;
+      
+    }
+    .swiper-slide:nth-child(1) .display-box{
+      background: var(--maintanceimage);
+      background-size: cover;
+      background-position: center;
+    }
+     .swiper-slide:nth-child(2) .display-box{
+      background: var(--fenceimage);
+      background-position: center;
+      background-size: cover;
+    }
+    .swiper-slide:nth-child(3) .display-box{
+      background: var(--Truffimage); 
+      background-position: center;
+      background-size: cover;
+    }
+    .swiper-slide:nth-child(4) .display-box{
+      background: var(--otherprojects);
+      background-size: cover;
+      background-position: center;
     }
     .card .display-text .spacce{
-      height: 80px; 
+      height:10px; 
     }
     .card .display-text {  
        width: 95%;
        margin-left:2.5%;  }
+      .card .display-text p{
+        padding: 10px;
+      }
     .card  a{
+      position: absolute;
       margin: 10px; 
       color: black ; 
       text-decoration: none;
       background-color: green;
       border-radius: 30px; 
-      padding: 20px; 
+      padding:10px; 
+      opacity: .8;
+      transform: scale(1);
+      transition: .5s ease-in;
+    }
+    .card a:hover{
+      opacity: 1;
+      transform: scale(1.1);
     }
     .swiper-container .swiper-slide{
+
       width: 400px;       
     }
+    
    
      @media(max-width: 430px){
+       .swiper-container{
+         margin: 10px;
+       }
       .swiper-container .swiper-slide{
         width:100%
       }
-      .card  .display-text .spacce{
-        height: 60px;
+      .card .display-text p{
+        font-size: 14px;
       }
+      @media(max-width: 380px){
+        .card .display-text p{
+          font-size: 12px;
+        }
+      }
+    
+      
      }
     
    

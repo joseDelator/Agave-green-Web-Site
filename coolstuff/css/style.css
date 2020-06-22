@@ -1,23 +1,36 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Sriracha', sans-serif;
+}
 body
 {
 margin: 0;
-padding: 0; 
+padding: 0;
+box-sizing: border-box;
 background-color: #82a7f0;
-min-height: 100vh;
-display: flex;
-justify-content: center;
-align-self:center;
-justify-content: center;
-}
 
-.container
+
+
+}
+.containerbig{
+	display: flex;
+	min-height: 100vh;
+	width: 100%;
+	justify-content: center;
+	align-self:center;
+	justify-content: center;
+	
+}
+.container 
 {
 	
 	position: relative;
 	max-width: 100%;
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-	grid-template-rows: minmax(200px, auto);
+	grid-template-rows: minmax(300px, auto);
 	margin:40px;
 	grid-auto-flow: dense;
 	grid-gap: 10px;
@@ -28,6 +41,7 @@ justify-content: center;
 	size: 20px; 
 	color: white;
 	text-decoration: none;
+	text-transform: capitalize;
 }
 .container svg 
 {
@@ -39,8 +53,7 @@ justify-content: center;
 .container svg:hover{
 	fill: black;
 }
-.container .box
-{
+.container a{
 	color: white;
 	background: white;
 	padding: 20px;
@@ -55,7 +68,7 @@ justify-content: center;
 
 
 
-.container .box:hover
+.container a:hover
 {
 	font-size: 30px; 
 	transform: scale(1.1);
@@ -64,88 +77,91 @@ justify-content: center;
 
 }
 
-.container .box img
+.container a img
 {
 	position: relative;
 	max-width: 100px;
 	margin-bottom: 10px;
 }
 /* agave home box */
-.container .box:nth-child(1)
+  .container a:nth-child(1) 
 {
 	grid-column: span 2;
 	grid-row: span 1; 
-	background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url('../imges/lawn1.jpeg');
+	background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url('../imges/Green_Grass_Background.jpg');
     background-blend-mode:multiply;
     background-position: center;
 }
-.container .box:nth-child(1) img
+.container a:nth-child(1)  img
 {
 	max-width: 200px; 
 	border-radius: 50%;
 }
-.container .box:nth-child(1):hover
+.container a:nth-child(1):hover
 {
-	 background-size: cover;
-	 background-position: center;
+	
 	
 }
 
-/* projects works */
-.container .box:nth-child(2)
+/* projects works*/
+  .container a:nth-child(2) 
 {
 	grid-column: span 1;
 	grid-row: span 2; 
-	background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url('../imges/plathway.jpg');
+	background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url('../imges/porjected.jpg');
     background-blend-mode:multiply;
     background-size: cover;
 	position: center; 	
 }
 
 /*contect with us */
-.container .box:nth-child(3)
+.container a:nth-child(3) 
 {
-background:  url('../imges/lawn1.jfif'); 
+background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url('../imges/plathway.jpg'); 
+background-blend-mode:multiply;
+background-size: cover;
+position: center; 	
 }
+
 /*well take you money */
-.container .box:nth-child(4)
+.container a:nth-child(4) 
 {
 	
 	grid-column: span 1;
 	grid-row: span 2; 
-	background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url('../imges/trumpwall.jfif');
+	background: linear-gradient(rgba(0,0,0, .3),rgba(0,0,0,0.3)), url('../photos/walkway5.jpg');
     background-blend-mode:multiply;
     background-size: cover; 
 }
 
 /* git a quote */
-.container .box:nth-child(5)
+.container  a:nth-child(5) 
 {
 	grid-column: span 3;
 	grid-row: span 1;
-	background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url('../imges/l.jpg');
+	background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url('../photos/walkway4.jpg');
     background-blend-mode:multiply;
     background-size: cover; 
 }
 
-.container .box:nth-child(5):hover
+.container a:nth-child(5):hover
 {
 	 
 
 	transform: scale(1.05);
 }
 /* fencing */ 
-.container .box:nth-child(6)
+.container  a:nth-child(6) 
 {
-background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url('../imges/fencecool.jpg');
+background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url('../imges/fence.JPG');
     background-blend-mode:multiply;
     background-size: cover; 
     background-repeat: no-repeat;
 }
 /* lawnmower */ 
-.container .box:nth-child(7)
+.container a:nth-child(7) 
 {
-background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url('../imges/lawn2.jpg');
+background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url('../imges/maintance.jpg');
     background-blend-mode:multiply;
     background-repeat: no-repeat;
     background-size: cover; 
@@ -157,20 +173,23 @@ background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url('../imges/lawn
 	.container
 	{
 		min-width: 99%;
-		grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
 		grid-template-rows: minmax(auto, auto);	
-
+		margin: 10px;
 	}
-	.container .box 
+	.container a
 	{
 		grid-column: unset !important;
 		grid-row: unset !important;
 	}
-	.container .box:hover{
+	.container a:hover{
 		transform: scale(1); 
 		font-size: 20px; 
 
 	}	
+.container a:nth-child(5):hover{
+	transform: scale(1);
+}
 }
 @media (min-width: 1525px) 
 {

@@ -1,14 +1,15 @@
 .info-top{
 
-    background-color: rgba(183, 225, 205, .6);
+    background-color: rgba(183, 225, 205, 1);
     display: flex;
-    
-    
+    vertical-align: text-bottom;
+    justify-content: center;
   }
   .info-top h1{
-    
+    text-align: center;
     font-size: 15px;
-    padding: 10px;
+    padding: 20px 5px;
+    text-transform: capitalize;
   }
   @media(max-width: 805px){
     .info-top{
@@ -17,6 +18,6 @@
 
     .info-top h1{
       padding-top: 0px;
-      padding-bottom: 2px;
+      padding-bottom: 10px;
     }
 }

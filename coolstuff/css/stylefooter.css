@@ -10,14 +10,15 @@
 }
 
 
-.footer .svg-container{
+.footer a{
     width: 20%;
     position: relative;
     display: inline-block;
     text-align: center;
+    text-decoration: none;
     
 }
-.footer .svg-container h3{
+.footer h3{
     position: relative;
     text-transform: capitalize;
     opacity: 0;
@@ -36,28 +37,34 @@
 
 
 
-.footer .svg-container:hover{
-    background: darkgoldenrod;
+.footer a:hover{
+    background: rgba(183, 225, 205, .6);
     border-radius: 4px;
 }
-.footer .svg-container:hover h3{
+.footer a:hover h3{
     opacity: 1;
-    color: goldenrod;
+    color: black;
+    text-decoration: black;
 }  
 
-.footer .svg-container:hover svg{
+.footer a:hover svg{
 
     opacity: .6;
-    transform: rotate(34);
+
+}
+.lic{
+    color: white;
+    background-color: black;
+    text-align: center;
 }
 @media(max-width: 700px){
     .footer{
         display: grid;
     }
-    .footer .svg-container{
+    .footer a{
         width: 100%;
     }
-    .footer .svg-container h3{
+    .footer a h3{
         opacity: 1;
         color: white;
     }
