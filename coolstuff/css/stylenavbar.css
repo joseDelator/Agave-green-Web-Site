@@ -18,6 +18,7 @@ nav {
 	z-index: 9999; 
 
 }
+
 .logo {
 	color: var(--navtextcolor);
 	text-transform: uppercase;

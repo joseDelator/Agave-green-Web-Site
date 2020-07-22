@@ -16,7 +16,6 @@ background-color: #82a7f0;
 }
 .containerbig{
 	display: flex;
-	min-height: 100vh;
 	width: 100%;
 	justify-content: center;
 	align-self:center;
@@ -97,11 +96,7 @@ background-color: #82a7f0;
 	max-width: 200px; 
 	border-radius: 50%;
 }
-.container a:nth-child(1):hover
-{
-	
-	
-}
+
 
 /* projects works*/
   .container a:nth-child(2) 
