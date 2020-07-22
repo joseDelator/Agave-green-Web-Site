@@ -7,7 +7,7 @@ document.write(`
     
     <ul class="links">
         <li><a href="prime.html">Home</a></li>
-        <li><a href="connectwithus.html">Connect</a></li>
+        <li><a href="connectwithus.php">Connect</a></li>
         <li><a href="gala.html">Projects</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="servies.html">Services</a></li>
