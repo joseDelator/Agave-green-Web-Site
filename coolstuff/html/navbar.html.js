@@ -6,7 +6,7 @@ document.write(`
     </div>
     
     <ul class="links">
-        <li><a href="index.html>home</a></li>
+        <li><a href="index.html">home</a></li>
         <li><a href="connectwithus.php">Connect</a></li>
         <li><a href="gala.html">Projects</a></li>
         <li><a href="about.html">About</a></li>
