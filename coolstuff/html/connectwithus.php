@@ -23,7 +23,7 @@
 		<h2>Phone : 707-280-3961</h2>
 		<h2>Email : agavegreenlandscapes@gmail.com</h2>
 		<h2>send us a message</h2>
-		<form action="connectwithus.html" method="POST"> 
+		<form action="connectwithus.php" method="POST"> 
 			<input type="name" name="Name" placeholder="full name"></input>
       		<input type="Email" name="Email" placeholder="Email"></input>
       		<input type="Phone" name="phone" placeholder="Phone Number"></input>
