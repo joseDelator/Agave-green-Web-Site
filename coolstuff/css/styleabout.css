@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sriracha',sans-serif;
+    
+}
+body{
+    background: url(../imges/sonoma.jpg);
+    background-repeat: no-repeat;
+ 	background-attachment: fixed;
+ 	background-size: cover;
+ 	background-position: top;
+}
+.aboutcontainer{
+    display: flex;
+    background: inherit;
+    
+}
+.logo-image{
+    padding: 20px;
+    position: relative;
+    height: 500px;
+    width: 500px;
+    background:url('../imges/agavecl1.png');
+    background-size: cover;
+    background-position: center;
+}
+.textcontainer{
+    
+    position: relative;
+    width: 400px; 
+	height: 400px; 
+	background: inherit;
+	position: relative;
+	text-align: center;
+	 border-radius: 15px;
+	z-index: 0;
+	overflow: hidden;
+}
+
+.textcontainer:after{
+    content: '';
+    width: 550px;
+    height: 950px;
+    background: inherit; 
+    position: absolute;
+    left: -25px; 
+    top: -25px; 
+    bottom: 0;
+    box-shadow: inset 0 0 0 300px rgba(243, 245, 245, 0.2);
+    filter: blur(10px);
+    z-index: -25;
+
+   }

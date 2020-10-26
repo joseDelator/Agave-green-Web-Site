@@ -18,6 +18,7 @@ nav {
 	z-index: 9999; 
 
 }
+
 .logo {
 	color: var(--navtextcolor);
 	text-transform: uppercase;
@@ -94,17 +95,10 @@ nav {
 
 .nav-active{
 		transform: translateX(0%);
+		display: flex;
 	}
-	@keyframes LinkFade{
-		from{
-			opacity: 0;
-			transform: translateX(50px); 
-		}
-		to{
-			opacity: 1; 
-			transform: translateX(0px);
-		}
-	}
+	
+	
 	 .toggle .line1{
 	 	transform: rotate(-45deg) translate(-5px, 6px);
 	 }
@@ -129,16 +123,18 @@ nav {
 		right: 0px;
 		height: 88vh;
 		top: var(--navbarheight);
-		background: var(--navcolor) ; 
-		display: flex;
+		background: rgba( 0, 0, 0, .75) ;
+		 
+		display: none;
 		flex-direction: column;
 		align-items: center;
-		width: 50%; 
+		width: 100%; 
 		transform: translateX(100%);
 		transition: transform 0.5s ease-in; 
+		
 	}
 	.links li{
-		opacity: .4;
+		
 		border: 1px; 
 		
 
@@ -152,6 +148,7 @@ nav {
 
 .nav-active{
 		transform: translateX(0%);
+		display: flex;
 	}
 	@keyframes LinkFade{
 		from{
