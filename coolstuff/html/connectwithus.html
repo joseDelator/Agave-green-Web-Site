@@ -31,45 +31,8 @@
       		<input type="submit" name="submit" value="connect"/>  
 		</form>
 	</div>
-	<?php
-	require 'phpmailer/PHPMailer.php'; 
-	require 'phpmailer/SMTP.php';
-	require 'phpmailer/Exception.php';
-	use PHPMailer\PHPMailer\PHPMailer;
-	if(isset($_POST['submit'])){
-	$mail  = new PHPMailer();  
-	$mail->isSMTP();
-	$mail->SMTPAuth= true;
-	$mail->SMTPsecure = 'tls';
-	$mail->Host = 'smtp.gmail.com';
-	$mail->Port = '587';
-	$mail->Username = 'fabichivas101@gmail.com';
-	$mail->Password = 'chivas101';
-	$mail->SetFrom('coolstuff@gmail.com');
-	$mail->Subject = 'Hellloo this is an test';
-	$mail->AddAddress('fabichivas101@gmail.com');
-	$email= '';
-	$name='';
-	$phone='';
-	$message='';
 	
-	if ($_POST['Name'] != $name && $_POST['Email'] != $email ){
-		echo $email;
-		$name = $_POST['Name'];
-		$email = $_POST['Email'];
-		$phone = $_POST['Phone'];
-		$message = $_POST['message'];
-		$mail->Body = " $phone,  $name, $message";
-		$mail->Subject = "$email";
-		$mail->Send();
-		$mail->
-		unset($_POST);
-		
-	}
-	}
-
 	
-	?>
 
 	<script src="footer.html.js"></script>
 	<script src="../java_stuff/app.js"></script>	
